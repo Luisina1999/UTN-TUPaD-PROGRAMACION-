@@ -1,0 +1,107 @@
+# 1 crear un programa que imprima por pantalla el mensaje. "hola mundo!".
+print ("hola mundo!")
+
+# 2 crear un programa que pida al usuario su nombre e imprima por pantalla un saludo usando
+#  el nombre ingresado. Por ejemplo: si el usuario ingresa "marcos", el programa debe imprimir
+#por pantalla "hola marcos". 
+nombre = input ("por favor, ingrese su nombre")
+print (f"hola{nombre}!")
+
+# 3 crear un programa que pida al usuario su nombre, apellido, edad y lugar de residencia e imprima por pantalla 
+#por pantalla una oracion con los datos ingresados. por ejemplo: si el usuario ingresa "marcos", "perez"
+#"30"y "argentina", el programa debe imprimir "soy marcos perez, tengo 30 años y vivo en argentina"
+nombre = input("por favor, ingrese su nombre")
+apellido =input("por favor,ingrese se apellido")
+edad = input ("por favor, ingrese su edad")
+lugar= input ("por favor, ingrese lugar donde vive")
+
+print (f"soy {nombre} {apellido}, tengo {edad} años y soy de {lugar}.")
+
+#4 crear un programa que pida al usuario el radio de un circulo
+# e imprima por pantalla su area y su perimetro 
+import math 
+
+radio = float(input("por favor, ingrese el radio del ciculo:"))
+
+area = math. pi * (radio * 2)
+perimetro = 2 * math.pi * radio 
+
+print (f"el resultado del area es:{area}")
+print (f"el resultado del perimetro es:{perimetro}")
+
+#5crear un programa que pida al usuario una cantidad de segundos e imprima 
+# por pantalla cuantas horas equivale 
+
+segundos= int(input("por favor, ingrese una cantidad de segundos: "))
+
+horas = segundos / 3600 
+
+print (f"{segundos} segundos equivalen a {horas} horas. ")
+
+#crear un programa que pida al usuario dos numeros enteros distintos del 0 y muestre 
+#en pantalla el resultado de sumarlos, restarlos, multiplicarlos y dividirlos. 
+
+while True: 
+    numero1= int(input("por favor, ingrese el primer numero"))
+    numero2 = int(input ("por favor, ingrese el segundo numero"))
+
+    if numero1 == 0 or numero2 == 0: 
+        print ("los numeros no pueden ser 0. intentelo de nuevo") 
+    elif numero1 == numero2: 
+        print ("los numeros deben ser distintos entre si. intentelo de nuevo") 
+    else:
+        break 
+
+    suma = numero1 + numero2 
+    resta = numero1 - numero2 
+    multiplicacion = numero1 * numero2
+    division = numero1 / numero2 
+
+    print(f"el resultado de la suma es:",suma) 
+    print(f"el resultado de la resta es:" resta) 
+    print (f"el resultado de la resta es:" multiplicacion) 
+    print( f"el resultado de la resta es:"division) 
+
+ #crear un programa que pida al usuario un numero e imprima 
+#por pantalla la tabla de dicho numero
+
+numero = int(input("introduzca un numero")) 
+
+for i in range (0,11):
+    resultado = i * numero
+    print(numero, "x" , i, "=",resultado) 
+
+ #crear un programa que pida al usuario su altura y su peso e imprima por pantalla la masa
+#corporal. tener en cuenta que el indice de masa corporal. 
+
+
+altura= float(input("por favror, ingrese su altura"))
+peso=float(input("por favor, ingrese su peso"))
+
+imc = peso/ (altura **2) 
+
+
+
+print(f"su indice de masa corporal es: {imc:.2f}") 
+
+#crear un programa que pida al usuario una temperatura en grados celsius e imprima
+# por pantalla su equivalente en grados fahrenheit. tener en cuenta la siguiente equivalencia:
+
+temperatura = float(input("por favor, ingrese su temperatura en celsius"))
+
+fahrenheit = temperatura * 9/5 + 32 
+
+ 
+print(f"{temperatura}ºC equivalen a {fahrenheit}ºF")
+
+#crear un programa que pida al usuario 3 numeros e imprima por pantalla el promedio 
+#de dichos numeros. 
+
+
+numero1=float(input("por favor, ingrese el primer numero"))
+numero2=float(input("por favor, ingrese el segundo numero"))
+numero3=float (input("por favor,ingrese el tercer numero"))
+
+promedio = (numero1 + numero2 + numero3) / 3
+ 
+print(f"el promedio de los tres numeros es: {promedio:.2f}")
